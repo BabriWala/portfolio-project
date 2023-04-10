@@ -126,8 +126,9 @@ body{
 }
 
 .uil{
-    padding: 15px 20px;
-    font-size: 20px;
+    padding: 10px 15px;
+    font-size: 30px;
+    font-weight: bold;
     display: inline-block;
     
 }
@@ -135,35 +136,85 @@ body{
 li{
     border-left: 5px solid transparent;
     margin-bottom: 10px;
+    
 }
 
 /* .li:hover > i{
     background-color: none;
 } */
 
-li:hover > i{
+li:hover > a > i{
     background-color: transparent;
     color: #fff;
-    transition: all 0.3s ease-in-out;
+    
 }
 li:hover{
     border-color: #fff;
     transition: all 0.3s ease-in-out;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 
-
-
-#menu > li > span{
+.home, .about, .projects, .contact, .message{
     display: none;
-
 }
 
-#menu > li:first-of-type:hover > span{
+
+
+.uil-estate:hover + .home{
     display: inline-block;
-    padding: 15px 20px;
-    transition: all 0.3s ease-in-out;
+    padding-right: 15px;
     background-color: transparent;
     color: #fff;
-    box-shadow: 2px 2px 2px black
+    font-size: 20px;
+    cursor: pointer;
 }
 
+.uil-smile:hover + .about{
+    display: inline-block;
+    padding-right: 15px;
+    background-color: transparent;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.uil-bag:hover + .projects{
+    display: inline-block;
+    padding-right: 15px;
+    background-color: transparent;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.uil-envelope-edit:hover + .contact{
+    display: inline-block;
+    padding-right: 15px;
+    background-color: transparent;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.uil-comments:hover + .message{
+    display: inline-block;
+    padding-right: 15px;
+    background-color: transparent;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.heading-home{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 300px;
+    font-family: 'Oswald', sans-serif;
+    color: #ffffff19;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: inline-block;
+    z-index: -5;
+}
